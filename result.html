@@ -1,0 +1,81 @@
+<!-- Emotion Prediction & Music Recommendation Page -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Recommendations</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+            font-family: 'Arial', sans-serif;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .result-box {
+            background: white;
+            border-radius: 10px;
+            padding: 40px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .emotion-title {
+            font-size: 28px;
+            color: #333;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .recommendation-title {
+            font-size: 20px;
+            color: #555;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        .music-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        .music-list li {
+            background: #e0f7fa;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .btn-home {
+            background-color: #007bff;
+            color: white;
+            margin-top: 30px;
+            font-size: 16px;
+        }
+        .btn-home:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="result-box text-center">
+                    <h2 class="emotion-title">Detected Emotion: {{ emotion }}</h2>
+                    
+                    <h4 class="recommendation-title">Recommended Music</h4>
+                    <ul class="music-list">
+                        {% for song in music.split('\n') %}
+                            <li>{{ song }}</li>
+                        {% endfor %}
+                    </ul>
+
+                    <a href="/" class="btn btn-home w-100">Upload Another Image</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
