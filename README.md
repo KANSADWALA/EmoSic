@@ -30,6 +30,8 @@ This Project involves emotion detection from face images and music recommendatio
   <li><strong>GPT-4 (LLM):</strong> A large language model used for generating personalized music recommendations based on the detected emotions, offering highly relevant suggestions tailored to the user’s emotional state.</li>
 </ul>
 
+## Dataset Used
+Dataset:<a href="https://www.kaggle.com/datasets/msambare/fer2013"> FER-2013</a>
 
 ## Project Structure
 
@@ -45,6 +47,8 @@ This Project involves emotion detection from face images and music recommendatio
 
 <pre><code class="bash">
   EmoSic/
+  │
+  ├── kaggle.json                    # To the fetch the Dataset 
   │
   ├── EmoSic.ipynb                   # Notebook with ResNet model and emotion detection logic
   ├
