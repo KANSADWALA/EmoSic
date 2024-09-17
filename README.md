@@ -47,10 +47,10 @@ This Project involves detecting emotions from face images and recommending music
   EmoSic/
   │
   ├── EmoSic.ipynb                   # Notebook with ResNet model and emotion detection logic
+  ├
+  ├── Resnet_model_version_2.keras   # Pre-trained model for emotion detection
   │
   ├── app.py                         # Flask app to handle file uploads, predictions, and rendering templates
-  |
-  ├── Resnet_model_version_2.keras   # Pre-trained model for emotion detection
   │
   ├── templates
       ├── upload.html                # Image upload page
