@@ -1,4 +1,4 @@
-# 🎶Emosic
+# 🎶EmoSic
 
 ## Overview
 This Project involves emotion detection from face images and music recommendation tailored to the predicted emotion in a Flask app. The system uses a pre-trained ResNet model to analyze facial expressions and predict the corresponding emotion, after which it generates a list of songs that match the user's emotional state.
