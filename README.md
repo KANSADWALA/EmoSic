@@ -31,7 +31,7 @@ This Project involves emotion detection from face images and music recommendatio
 </ul>
 
 ## Dataset Used
-Dataset:<a href="https://www.kaggle.com/datasets/msambare/fer2013"> FER-2013</a>
+Dataset: <a href="https://www.kaggle.com/datasets/msambare/fer2013">FER-2013</a>
 
 ## Project Structure
 
